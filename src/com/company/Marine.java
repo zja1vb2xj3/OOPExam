@@ -15,12 +15,12 @@ class Marine extends Unit {
 
 
     @Override
-    void increaseHP(int hp) {
-        super.hp += hp;
+    void increaseHP(int recoveryValue) {
+        super.hp += recoveryValue;
     }
 
     @Override
-    void decreaseHP(int hp) {
-        super.hp -= hp;
+    void decreaseHP(int damage) {
+        super.hp -= damage;
     }
 }
