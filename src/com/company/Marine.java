@@ -5,6 +5,7 @@ class Marine extends Unit{
 
     Marine(){
         super.name = "마린";
+        super.unitType = true;
         super.hp = maxHP;
         createdUnitSpeak();
         printHP();

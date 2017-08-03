@@ -6,10 +6,13 @@ class Tank extends Unit{
 
     Tank() {
         super.hp = maxHP;
+        super.unitType = false;
         super.name = "시즈탱크";
         createdUnitSpeak();
         printHP();
     }
 
-
+    public int getMaxHP() {
+        return maxHP;
+    }
 }

@@ -4,7 +4,8 @@ public class Hydra extends Unit {
     private int power = 10;
 
     Hydra(){
-        name = "히드라";
+        super.name = "히드라";
+        super.unitType = true;
         createdUnitSpeak();
         printPower();
     }

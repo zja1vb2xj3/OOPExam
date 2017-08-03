@@ -3,7 +3,8 @@ package com.company;
 abstract class Unit {
     int hp;
     String name;
-
+    boolean unitType;// true 라면 생물
+    
     void printHP(){
         System.out.println(name + "의 HP : "+ hp);
     }
