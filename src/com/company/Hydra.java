@@ -4,7 +4,8 @@ public class Hydra extends Unit {
     private int power = 10;
 
     Hydra(){
-        System.out.println("히드라가 생성되었습니다.");;
+        name = "히드라";
+        createdUnitSpeak();
         printPower();
     }
 
@@ -19,18 +20,4 @@ public class Hydra extends Unit {
     }
 
 
-    @Override
-    void increaseHP(int recoveryValue) {
-
-    }
-
-    @Override
-    void decreaseHP(int damage) {
-
-    }
-
-    @Override
-    void printHP() {
-
-    }
 }
