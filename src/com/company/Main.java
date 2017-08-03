@@ -7,5 +7,8 @@ public class Main {
       Marine marine = new Marine();
 
       Hydra hydra = new Hydra();
+
+      int damage = hydra.attackUnit(marine.name);
+      marine.decreaseHP(damage);
     }
 }

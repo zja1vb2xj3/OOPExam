@@ -6,22 +6,24 @@ class Tank extends Unit {
 
     Tank() {
         super.hp = maxHP;
+        super.name = "시즈탱크";
         System.out.println("탱크가 생성 되었습니다.");
-        printTankHP();
+        printHP();
     }
 
-    void printTankHP(){
+    @Override
+    void increaseHP(int recoveryValue) {
+
+    }
+
+    @Override
+    void decreaseHP(int damage) {
+
+    }
+
+    @Override
+    void printHP() {
         System.out.println("탱크 HP : " + hp);
     }
 
-
-    @Override
-    void increaseHP(int hp) {
-
-    }
-
-    @Override
-    void decreaseHP(int hp) {
-
-    }
 }
