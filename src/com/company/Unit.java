@@ -12,12 +12,16 @@ abstract class Unit {
         System.out.println(name + " 이(가) 생성되었습니다.");
     }
 
-    //추상 메소드로 구현하지않고 추상 클래스에서 interface로 구현한 이유 :
-    //추상 메소드로 구현하게 되면 구현할 필요가 없는 자식 클래스에서도 추상 메소드를 구현해줘야한다.
+    void increaseHP(String unitName, int recoveryValue) {
+        System.out.println(unitName + "이(가) 체력이 증가합니다.");
+        hp += recoveryValue;
+        printHP();
+    }
 
-    interface OnChangedHP{
-        void increaseHP(int recoveryValue);
-        void decreaseHP(int damage);
+    void decreaseHP(String unitName, int damage) {
+        System.out.println(unitName + "이(가) 체력이 감소합니다.");
+        hp -= damage;
+        printHP();
     }
 
 }

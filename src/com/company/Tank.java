@@ -1,6 +1,6 @@
 package com.company;
 
-class Tank extends Unit {
+class Tank extends Unit{
 
     private final int maxHP = 150;
 
@@ -10,5 +10,6 @@ class Tank extends Unit {
         createdUnitSpeak();
         printHP();
     }
+
 
 }
