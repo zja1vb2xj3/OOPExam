@@ -10,7 +10,10 @@ public class Main {
         marine.decreaseHP(marine.name, damage);
 
         Medic medic = new Medic();
-        medic.recoveryHP(marine.hp, marine.getMaxHP(),marine.name);
+
+        int recoveredHP = medic.recoveryHP(marine.hp, marine.getMaxHP(),marine.name);
+        marine.increaseHP(marine.name, recoveredHP-marine.hp);
+
 
         Tank tank = new Tank();
     }

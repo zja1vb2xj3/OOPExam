@@ -13,13 +13,13 @@ abstract class Unit {
     }
 
     void increaseHP(String unitName, int recoveryValue) {
-        System.out.println(unitName + "이(가) 체력이 증가합니다.");
+        System.out.println(unitName + " 의 체력이 증가합니다.");
         hp += recoveryValue;
         printHP();
     }
 
     void decreaseHP(String unitName, int damage) {
-        System.out.println(unitName + "이(가) 체력이 감소합니다.");
+        System.out.println(unitName + " 의 체력이 감소합니다.");
         hp -= damage;
         printHP();
     }
