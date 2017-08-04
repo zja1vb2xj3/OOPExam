@@ -1,19 +1,19 @@
 package com.company;
 
 class Marine extends Unit{
-    private final int maxHP = 60;
+    private final int MAX_HP = 60;
 
     Marine(int id){
         super.name = "마린";
         super.id = id;
         super.unitType = true;
-        super.hp = maxHP;
+        super.hp = MAX_HP;
         createdUnitSpeak();
         printHP();
     }
 
     int getMaxHP() {
-        return maxHP;
+        return MAX_HP;
     }
 
 

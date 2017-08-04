@@ -2,14 +2,19 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) {
-        Marine marine1 = new Marine(1);
+        Ghost ghost = new Ghost(1);
 
-        Marine marine2 = new Marine(2);
+        ghost.onCloaking();
 
-        Hydra hydra = new Hydra(1);
 
-        int damage = hydra.attackUnit(marine1.name, marine1.id);
-        marine1.decreaseHP(marine1.name, damage);
+//        Marine marine1 = new Marine(1);
+//
+//        Marine marine2 = new Marine(2);
+//
+//        Hydra hydra = new Hydra(1);
+//
+//        int damage = hydra.attackUnit(marine1.name, marine1.id);
+//        marine1.decreaseHP(marine1.name, damage);
 
 
 //        marine.decreaseHP(marine.name, damage);

@@ -16,7 +16,7 @@ public class Hydra extends Unit {
     }
 
     int attackUnit(String unitName, int id) {
-        System.out.println("히드라 공격. 대상 : " + unitName + id);
+        System.out.println("히드라 공격대상 : " + unitName + id);
 
         return power;
     }

@@ -2,6 +2,8 @@ package com.company;
 
 abstract class Unit {
     int hp;
+    int mp;
+    int transparency;
     int id;
     String name;
     boolean unitType;// true 라면 생물
@@ -12,6 +14,10 @@ abstract class Unit {
 
     public int getId() {
         return id;
+    }
+
+    public int getTransparency() {
+        return transparency;
     }
 
     void createdUnitSpeak(){
@@ -28,6 +34,11 @@ abstract class Unit {
         System.out.println(unitName + id + "의 체력이 감소합니다.");
         hp -= damage;
         printHP();
+    }
+
+    interface OnCloakingListener{
+        void onCloaking();
+        void offCloaking();
     }
 
 }
