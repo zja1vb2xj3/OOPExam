@@ -1,5 +1,6 @@
 package com.company;
-
+//1.추상화 공통의 속성이나 기능을 묶어 이름을 붙이는 것
+//스타크레프트 각각의 유닛들을 공통으로 묶는 Unit 추상클래스
 abstract class Unit {
     int hp;
     int mp;
@@ -35,6 +36,9 @@ abstract class Unit {
         hp -= damage;
         printHP();
     }
+    //2.다형성 Overloading (과적재) Overriding(무효화 하다)
+    //Overloading 하나의 함수에 여러개의 기능을 부여하는것
+    //Overriding기존의 기능을 고려하지않고 새로운 기능을 부여
 
     interface OnCloakingListener{
         void onCloaking();
