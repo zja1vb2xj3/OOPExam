@@ -5,7 +5,7 @@ public class Main {
         Ghost ghost = new Ghost(1);
 
         ghost.onCloaking();
-
+        ghost.offCloaking();
 
 //        Marine marine1 = new Marine(1);
 //
