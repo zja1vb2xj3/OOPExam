@@ -19,7 +19,7 @@ class Medic extends Unit {
             return currentHP;
         }
         else {
-            System.out.println("생물이 아닙니다. 치료 할 수 없습니다.");
+            System.out.println("생물이 아닙니다. 치료할 수 없습니다.");
             return -1;
         }
     }
